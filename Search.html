@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>a simple observer pattern example</title>
+    <script type="text/javascript" src="observer-pattern.js"></script>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <!-- <script type="text/javascript" src="jquery.dataTables.js"></script> -->
+    <script type="text/javascript">
+        $('document').ready(function () {
+            var observer = new Observer();
+            observer.init();
+        });
+    </script>
+</head>
+<body>
+    <input id='searchButton' type="button" value="Search Peter"/>
+    <!-- <div id="divSearchResults"> -->
+        <table id='resultTable'></table>
+    <!-- </div> -->
+</body>
+</html>
